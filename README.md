@@ -1,4 +1,5 @@
-# **Airline Data ETL Pipeline**
+# **Airline Data ETL Pipeline** 
+Built an end-to-end data pipeline handling ingestion, transformation, and analytics using Azure cloud services.
 
 ## **Project Overview**
 
@@ -16,11 +17,9 @@ It ingests raw flight data, performs transformations using **PySpark in Databric
 * **Python / PySpark & SQL:** Data processing and analytics 
 
 ---
-![Capture](https://github.com/user-attachments/assets/4303a2fe-353d-4812-a38f-be1f9fe6f9fa)
+![Capture](https://github.com/user-attachments/assets/4303a2fe-353d-4812-a38f-be1f9fe6f9fa)  
 
-
-## **Project Structure**
-
+### File structure : 
 ```
 Airline-ETL-Pipeline/
 │
@@ -36,7 +35,27 @@ Airline-ETL-Pipeline/
 └── SQL_queries.md                       # SQL queries run on the processed data
 ```
 
+## **Architecture Diagram** - 
+```
+Raw Data (ADLS)
+      ↓
+Azure Data Factory (Pipeline)
+      ↓
+Azure Databricks (Transformation)
+      ↓
+Final Data (ADLS)
+      ↓
+Azure SQL Database
+## **Project Structure**
+```
 ---
+
+## 🔁 Data Flow
+1. Raw data is stored in ADLS (`raw-data`)
+2. Databricks reads and transforms data
+3. Processed data is stored in (`final-data`)
+4. Data is loaded into Azure SQL
+5. SQL queries generate insights
 
 ## **Project Steps**
 
@@ -121,11 +140,13 @@ df_transformed.write \
 
 ---
 
-## **Future Improvements**
+## 📊 Key Insights
 
-* Automate pipeline triggers when new raw data arrives.
-* Create dashboards for data visualization (Power BI / Databricks SQL).
-* Add unit tests for data validation.
+- Flights become more expensive as the departure date approaches.
+- Economy class flights dominate the dataset.
+- Certain routes (e.g., Delhi → Mumbai) have the highest frequency.
+- Airlines differ significantly in pricing strategies.
+
 
 ---
 
