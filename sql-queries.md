@@ -132,6 +132,3 @@ SELECT source_city, destination_city, airline, flight,
        RANK() OVER (PARTITION BY source_city, destination_city ORDER BY CAST(price AS FLOAT)) AS price_rank
 FROM Airlines;
 ```
-
-* Add 1–2 insights for each in your project.
-* Helps demonstrate analytical thinking in interviews.
