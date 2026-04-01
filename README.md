@@ -13,9 +13,11 @@ It ingests raw flight data, performs transformations using **PySpark in Databric
 * **Azure Databricks:** PySpark notebooks for data transformation
 * **Azure Data Factory (ADF):** Pipeline orchestration (ETL)
 * **Azure SQL Database:** Storing processed data for queries and analysis
-* **Python / PySpark & SQL:** Data processing and analytics
+* **Python / PySpark & SQL:** Data processing and analytics 
 
 ---
+![Capture](https://github.com/user-attachments/assets/4303a2fe-353d-4812-a38f-be1f9fe6f9fa)
+
 
 ## **Project Structure**
 
